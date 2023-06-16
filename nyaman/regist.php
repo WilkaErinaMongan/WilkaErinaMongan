@@ -19,39 +19,39 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
+        .formulir {
+            max-width: 400px;
+            margin-top: 100px;
+        } 
 
     </style>
 </head>
 <body class="content">
     <div class="container">
         <div id="box">
-            <center>
-                <h1 class="ml16">Selamat Datang</h1>
-            </center>
-            <br> <br>
-            <center>
-                <h2>Website Pencarian Rumah Makan</h2>
-                <br>
-                <h5>Lokasi: Toraja Utara</h5>
-                <h5>Dalynda Try Paresak, Wilka Erina Mongan, Aknes Pasomba</h5>
-                <br> <br>
-                <p>Silakan login untuk melanjutkan</p>
-            </center>
-            <br>
-            <center class="tombol">
-                <div class="row justify-content-center">
-                  <div class="col-1">
-                    <a href="regist.php">
-                        <button type="button" id="tombol" class="btn btn-success btn-lg">Daftar</button>
-                    </a>
-                  </div>
-                  <div class="col-1 ">
-                    <a href="login.php">
-                        <button type="button" id="tombol" class="btn btn-secondary btn-lg">Login</button>
-                    </a>
-                  </div>
-                </div>
-            </center>
+            <div class="formulir container">
+                <div class="col align-self-center">
+                    <h1 class="judul text-center fw-bold">DAFTAR</h1>
+                    <form method="POST" action="cekdaftar.php">
+                        <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="Masukkan Username" name="username">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan password" name="password">
+                        </div>
+                        <center>
+                            <button type="submit" class="btn btn-success">Daftar</button> <br>
+                        </center>
+                    </form>
+                    <br>
+                    <center>
+                        <p class="putih">Sudah punya akun? <a href="login.php" class="putih fw-bold">login</a></p>
+                    </center>
+                </div> 
+            </div>
         </div>
     </div>
 
